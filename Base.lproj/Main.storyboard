@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXC-JC-u8D">
+                                <rect key="frame" x="91" y="248" width="139" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4CF-pU-H6V"/>
+                                    <constraint firstAttribute="width" constant="139" id="FiO-kd-ITk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Number is Odd/Even" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgb-cv-wjm">
+                                <rect key="frame" x="20" y="181" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="GvB-zC-pcU"/>
+                                    <constraint firstAttribute="height" constant="21" id="Lri-jI-8Z3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZL-Oc-sck">
+                                <rect key="frame" x="112" y="319" width="96" height="65"/>
+                                <color key="backgroundColor" red="0.0" green="0.7001701133091085" blue="0.75673076923076921" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="5Xu-Xh-1tR"/>
+                                    <constraint firstAttribute="height" constant="65" id="vBY-Hi-8xf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="19"/>
+                                <state key="normal" title="Evaluate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="evalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IHC-gD-Al4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Odd or Even" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtX-1g-7XC">
+                                <rect key="frame" x="57" y="66" width="207" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="0mL-iN-nRg"/>
+                                    <constraint firstAttribute="width" constant="207" id="tyZ-tI-HtX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jtX-1g-7XC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Fj-m7-kV0"/>
+                            <constraint firstItem="iZL-Oc-sck" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2PX-iy-mCo"/>
+                            <constraint firstItem="jtX-1g-7XC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-175.5" id="EgA-sr-SgO"/>
+                            <constraint firstItem="fXC-JC-u8D" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-21" id="Iqt-5N-HoH"/>
+                            <constraint firstItem="iZL-Oc-sck" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="67.5" id="JRW-K6-e2L"/>
+                            <constraint firstItem="xgb-cv-wjm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zbn-M9-p7t"/>
+                            <constraint firstItem="fXC-JC-u8D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wVp-Lb-kuz"/>
+                            <constraint firstItem="xgb-cv-wjm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-92.5" id="yx6-hP-O55"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="evalButton" destination="iZL-Oc-sck" id="2tG-Dt-gw4"/>
+                        <outlet property="evenOrOddLabel" destination="xgb-cv-wjm" id="0Ph-Wr-GH2"/>
+                        <outlet property="userInput" destination="fXC-JC-u8D" id="QVY-2j-9d4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="366"/>
+        </scene>
+    </scenes>
+</document>
